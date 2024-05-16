@@ -1,4 +1,4 @@
-# gestione-bilancio
+# Gestione bilancio
 
 Progetto per l'esame di Programmazione ad oggetti.
 
