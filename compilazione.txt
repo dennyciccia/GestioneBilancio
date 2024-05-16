@@ -1,0 +1,3 @@
+javac src/errori/*.java src/dati/*.java src/modificaDati/*.java src/salvataggioDati/*.java src/esportazioneDati/*.java src/interfaccia/*.java src/*.java -d bin
+
+java -cp bin Main

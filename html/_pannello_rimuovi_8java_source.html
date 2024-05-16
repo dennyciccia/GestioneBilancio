@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GestioneBilancio:  File sorgente PannelloRimuovi.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GestioneBilancio<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_pannello_rimuovi_8java_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Caricamento in corso...</div>
+<div class="SRStatus" id="Searching">Ricerca in corso...</div>
+<div class="SRStatus" id="NoMatches">Nessun risultato</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">PannelloRimuovi.java</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_pannello_rimuovi_8java.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">package </span>modificaDati;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">import</span> java.awt.FlowLayout;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">import</span> java.awt.event.ActionEvent;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">import</span> java.awt.event.ActionListener;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">import</span> java.util.Date;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">import</span> javax.swing.JButton;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">import</span> javax.swing.JComponent;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">import</span> javax.swing.JFormattedTextField;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">import</span> javax.swing.JLabel;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">import</span> javax.swing.JOptionPane;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">import</span> javax.swing.JPanel;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">import</span> javax.swing.JSpinner;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">import</span> javax.swing.JTextField;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">import</span> javax.swing.SpinnerDateModel;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">import</span> javax.swing.SpinnerNumberModel;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">import</span> <a class="code hl_package" href="namespacedati.html">dati</a>.<a class="code hl_class" href="classdati_1_1_data.html">Data</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">import</span> <a class="code hl_package" href="namespacedati.html">dati</a>.<a class="code hl_class" href="classdati_1_1_elenco_voci.html">ElencoVoci</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">import</span> <a class="code hl_package" href="namespacedati.html">dati</a>.<a class="code hl_class" href="classdati_1_1_voce_di_bilancio.html">VoceDiBilancio</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">import</span> <a class="code hl_package" href="namespaceerrori.html">errori</a>.<a class="code hl_class" href="classerrori_1_1_ammontare_non_valido_exception.html">AmmontareNonValidoException</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">import</span> <a class="code hl_package" href="namespaceerrori.html">errori</a>.<a class="code hl_class" href="classerrori_1_1_descrizione_vuota_exception.html">DescrizioneVuotaException</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">import</span> <a class="code hl_package" href="namespaceerrori.html">errori</a>.<a class="code hl_class" href="classerrori_1_1_voce_non_presente_exception.html">VoceNonPresenteException</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">import</span> <a class="code hl_package" href="namespaceinterfaccia.html">interfaccia</a>.<a class="code hl_class" href="classinterfaccia_1_1_pannello_iniziale.html">PannelloIniziale</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>@SuppressWarnings(<span class="stringliteral">&quot;serial&quot;</span>)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classmodifica_dati_1_1_pannello_rimuovi.html">   34</a></span>public class <a class="code hl_class" href="classmodifica_dati_1_1_pannello_rimuovi.html">PannelloRimuovi</a> extends <a class="code hl_class" href="classmodifica_dati_1_1_pannello_modificatore.html">PannelloModificatore</a> implements ActionListener {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">//Componenti interfaccia</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classmodifica_dati_1_1_pannello_rimuovi.html#ae3e93a40455071164d1e1a029f636940">   36</a></span>    <span class="keyword">private</span> JLabel lblRimuovi, lblData, lblDescrizione, <a class="code hl_variable" href="classmodifica_dati_1_1_pannello_rimuovi.html#ae3e93a40455071164d1e1a029f636940">lblAmmontare</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classmodifica_dati_1_1_pannello_rimuovi.html#a20072f03ddcdebe6aa58149faa431151">   37</a></span>    <span class="keyword">private</span> JTextField <a class="code hl_variable" href="classmodifica_dati_1_1_pannello_rimuovi.html#a20072f03ddcdebe6aa58149faa431151">txtDescrizione</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classmodifica_dati_1_1_pannello_rimuovi.html#af9092aeb491bad7a88265a35b51e923d">   38</a></span>    <span class="keyword">private</span> JSpinner spData, <a class="code hl_variable" href="classmodifica_dati_1_1_pannello_rimuovi.html#af9092aeb491bad7a88265a35b51e923d">spAmmontare</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classmodifica_dati_1_1_pannello_rimuovi.html#a2e8a72987964320db605a323793c0800">   39</a></span>    <span class="keyword">private</span> JButton btnRimuovi, <a class="code hl_variable" href="classmodifica_dati_1_1_pannello_rimuovi.html#a2e8a72987964320db605a323793c0800">btnAnnulla</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classmodifica_dati_1_1_pannello_rimuovi.html#aa3e82a2829fdbfcea34dfbbf90419ea2">   45</a></span>    <span class="keyword">public</span> <a class="code hl_function" href="classmodifica_dati_1_1_pannello_rimuovi.html#aa3e82a2829fdbfcea34dfbbf90419ea2">PannelloRimuovi</a>(<a class="code hl_class" href="classinterfaccia_1_1_pannello_iniziale.html">PannelloIniziale</a> panIniz){</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        super(panIniz);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="comment">//Modelli spinner</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        SpinnerDateModel dateModel = <span class="keyword">new</span> SpinnerDateModel();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        SpinnerNumberModel numberModel = <span class="keyword">new</span> SpinnerNumberModel(0.0, -MAX_AMMONTARE, MAX_AMMONTARE, 0.1);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="comment">//Titolo</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        JPanel panelTitolo = <span class="keyword">new</span> JPanel();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        lblRimuovi = <span class="keyword">new</span> JLabel(<span class="stringliteral">&quot;Rimuovi voce&quot;</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        panelTitolo.add(lblRimuovi);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        add(panelTitolo);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="comment">//Campi input</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        JPanel panelData = <span class="keyword">new</span> JPanel();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        lblData = <span class="keyword">new</span> JLabel(<span class="stringliteral">&quot;Data:&quot;</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        panelData.add(lblData);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        spData = <span class="keyword">new</span> JSpinner(dateModel);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        panelData.add(spData);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        add(panelData);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        JPanel panelDescr = <span class="keyword">new</span> JPanel();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        lblDescrizione = <span class="keyword">new</span> JLabel(<span class="stringliteral">&quot;Descrizione:&quot;</span>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        panelDescr.add(lblDescrizione);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        txtDescrizione = <span class="keyword">new</span> JTextField();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        panelDescr.add(txtDescrizione);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        add(panelDescr);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        JPanel panelAmmontare = <span class="keyword">new</span> JPanel();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        lblAmmontare = <span class="keyword">new</span> JLabel(<span class="stringliteral">&quot;Ammontare: €&quot;</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        panelAmmontare.add(lblAmmontare);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        spAmmontare = <span class="keyword">new</span> JSpinner(numberModel);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        panelAmmontare.add(spAmmontare);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        add(panelAmmontare);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="comment">//Bottoni</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        JPanel panelBtn = <span class="keyword">new</span> JPanel();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        btnRimuovi = <span class="keyword">new</span> JButton(<span class="stringliteral">&quot;Rimuovi&quot;</span>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        panelBtn.add(btnRimuovi);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        btnAnnulla = <span class="keyword">new</span> JButton(<span class="stringliteral">&quot;Annulla&quot;</span>);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        panelBtn.add(btnAnnulla);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        add(panelBtn);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="comment">//Impostazioni allineamento</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        panelData.setLayout(<span class="keyword">new</span> FlowLayout(FlowLayout.LEFT));</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        panelDescr.setLayout(<span class="keyword">new</span> FlowLayout(FlowLayout.LEFT));</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        panelAmmontare.setLayout(<span class="keyword">new</span> FlowLayout(FlowLayout.LEFT));</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="comment">//Altre impostazioni componenti</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        spData.setEditor(<span class="keyword">new</span> JSpinner.DateEditor(spData, <span class="stringliteral">&quot;dd/MM/yyyy&quot;</span>));</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        txtDescrizione.setColumns(20);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        JComponent spAmmontareEditor = spAmmontare.getEditor();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        JFormattedTextField ftfAmmontare = ((JSpinner.DefaultEditor) spAmmontareEditor).getTextField();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        ftfAmmontare.setColumns(5);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="comment">//Eventi</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        btnRimuovi.addActionListener(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        btnAnnulla.addActionListener(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    @Override</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classmodifica_dati_1_1_pannello_rimuovi.html#a283fd0149880861cc11de2631aa3da56">  118</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmodifica_dati_1_1_pannello_rimuovi.html#a283fd0149880861cc11de2631aa3da56">actionPerformed</a>(ActionEvent e) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="comment">//In base al bottone premuto si aggiunge la voce o si torna indietro</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">switch</span>(e.getActionCommand()) {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Rimuovi&quot;</span>:{</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                    rimuoviVoce();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                    panIniz.tableChanged();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                    panIniz.getRbTutto().setSelected(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                    panIniz.getFrame().cambiaScheda(<span class="stringliteral">&quot;PannelloIniziale&quot;</span>); <span class="comment">//Ritorna alla home</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                } <span class="keywordflow">catch</span> (<a class="code hl_class" href="classerrori_1_1_ammontare_non_valido_exception.html">AmmontareNonValidoException</a> | <a class="code hl_class" href="classerrori_1_1_descrizione_vuota_exception.html">DescrizioneVuotaException</a> | <a class="code hl_class" href="classerrori_1_1_voce_non_presente_exception.html">VoceNonPresenteException</a> e1) {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                    JOptionPane.showMessageDialog(panIniz.getFrame(), e1.<a class="code hl_function" href="classerrori_1_1_voce_non_presente_exception.html#a5f89096533b10d8b0dab3406ebd6a73b">getMessage</a>(), <span class="stringliteral">&quot;Errore&quot;</span>, JOptionPane.WARNING_MESSAGE);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                }</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Annulla&quot;</span>:</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                panIniz.getFrame().cambiaScheda(<span class="stringliteral">&quot;PannelloIniziale&quot;</span>);    </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        }   </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="classmodifica_dati_1_1_pannello_rimuovi.html#a37ddf71c713bddf3fa03707994a1a486">  144</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmodifica_dati_1_1_pannello_rimuovi.html#a37ddf71c713bddf3fa03707994a1a486">rimuoviVoce</a>() throws <a class="code hl_class" href="classerrori_1_1_ammontare_non_valido_exception.html">AmmontareNonValidoException</a>, <a class="code hl_class" href="classerrori_1_1_descrizione_vuota_exception.html">DescrizioneVuotaException</a>, <a class="code hl_class" href="classerrori_1_1_voce_non_presente_exception.html">VoceNonPresenteException</a> {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        Date data = (Date) spData.getValue();</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        String descrizione = txtDescrizione.getText();</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        Double ammontare = (Double) spAmmontare.getValue();</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <a class="code hl_class" href="classdati_1_1_voce_di_bilancio.html">VoceDiBilancio</a> vdb = <span class="keyword">new</span> <a class="code hl_class" href="classdati_1_1_voce_di_bilancio.html">VoceDiBilancio</a>(<a class="code hl_class" href="classdati_1_1_data.html">Data</a>.<a class="code hl_function" href="classdati_1_1_data.html#a68097cb4146b7dd0c2607a9957fabaa1">parse</a>(data), descrizione, ammontare);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        panIniz.getElencoVoci().rimuovi(vdb);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>}</div>
+<div class="ttc" id="aclassdati_1_1_data_html"><div class="ttname"><a href="classdati_1_1_data.html">dati.Data</a></div><div class="ttdef"><b>Definition:</b> <a href="_data_8java_source.html#l00016">Data.java:16</a></div></div>
+<div class="ttc" id="aclassdati_1_1_data_html_a68097cb4146b7dd0c2607a9957fabaa1"><div class="ttname"><a href="classdati_1_1_data.html#a68097cb4146b7dd0c2607a9957fabaa1">dati.Data.parse</a></div><div class="ttdeci">static Data parse(Date date)</div><div class="ttdef"><b>Definition:</b> <a href="_data_8java_source.html#l00226">Data.java:226</a></div></div>
+<div class="ttc" id="aclassdati_1_1_elenco_voci_html"><div class="ttname"><a href="classdati_1_1_elenco_voci.html">dati.ElencoVoci</a></div><div class="ttdef"><b>Definition:</b> <a href="_elenco_voci_8java_source.html#l00018">ElencoVoci.java:18</a></div></div>
+<div class="ttc" id="aclassdati_1_1_voce_di_bilancio_html"><div class="ttname"><a href="classdati_1_1_voce_di_bilancio.html">dati.VoceDiBilancio</a></div><div class="ttdef"><b>Definition:</b> <a href="_voce_di_bilancio_8java_source.html#l00015">VoceDiBilancio.java:15</a></div></div>
+<div class="ttc" id="aclasserrori_1_1_ammontare_non_valido_exception_html"><div class="ttname"><a href="classerrori_1_1_ammontare_non_valido_exception.html">errori.AmmontareNonValidoException</a></div><div class="ttdef"><b>Definition:</b> <a href="_ammontare_non_valido_exception_8java_source.html#l00009">AmmontareNonValidoException.java:9</a></div></div>
+<div class="ttc" id="aclasserrori_1_1_descrizione_vuota_exception_html"><div class="ttname"><a href="classerrori_1_1_descrizione_vuota_exception.html">errori.DescrizioneVuotaException</a></div><div class="ttdef"><b>Definition:</b> <a href="_descrizione_vuota_exception_8java_source.html#l00009">DescrizioneVuotaException.java:9</a></div></div>
+<div class="ttc" id="aclasserrori_1_1_voce_non_presente_exception_html"><div class="ttname"><a href="classerrori_1_1_voce_non_presente_exception.html">errori.VoceNonPresenteException</a></div><div class="ttdef"><b>Definition:</b> <a href="_voce_non_presente_exception_8java_source.html#l00009">VoceNonPresenteException.java:9</a></div></div>
+<div class="ttc" id="aclasserrori_1_1_voce_non_presente_exception_html_a5f89096533b10d8b0dab3406ebd6a73b"><div class="ttname"><a href="classerrori_1_1_voce_non_presente_exception.html#a5f89096533b10d8b0dab3406ebd6a73b">errori.VoceNonPresenteException.getMessage</a></div><div class="ttdeci">String getMessage()</div><div class="ttdef"><b>Definition:</b> <a href="_voce_non_presente_exception_8java_source.html#l00027">VoceNonPresenteException.java:27</a></div></div>
+<div class="ttc" id="aclassinterfaccia_1_1_pannello_iniziale_html"><div class="ttname"><a href="classinterfaccia_1_1_pannello_iniziale.html">interfaccia.PannelloIniziale</a></div><div class="ttdef"><b>Definition:</b> <a href="_pannello_iniziale_8java_source.html#l00039">PannelloIniziale.java:39</a></div></div>
+<div class="ttc" id="aclassmodifica_dati_1_1_pannello_modificatore_html"><div class="ttname"><a href="classmodifica_dati_1_1_pannello_modificatore.html">modificaDati.PannelloModificatore</a></div><div class="ttdef"><b>Definition:</b> <a href="_pannello_modificatore_8java_source.html#l00014">PannelloModificatore.java:14</a></div></div>
+<div class="ttc" id="aclassmodifica_dati_1_1_pannello_rimuovi_html"><div class="ttname"><a href="classmodifica_dati_1_1_pannello_rimuovi.html">modificaDati.PannelloRimuovi</a></div><div class="ttdef"><b>Definition:</b> <a href="_pannello_rimuovi_8java_source.html#l00034">PannelloRimuovi.java:34</a></div></div>
+<div class="ttc" id="aclassmodifica_dati_1_1_pannello_rimuovi_html_a20072f03ddcdebe6aa58149faa431151"><div class="ttname"><a href="classmodifica_dati_1_1_pannello_rimuovi.html#a20072f03ddcdebe6aa58149faa431151">modificaDati.PannelloRimuovi.txtDescrizione</a></div><div class="ttdeci">JTextField txtDescrizione</div><div class="ttdef"><b>Definition:</b> <a href="_pannello_rimuovi_8java_source.html#l00037">PannelloRimuovi.java:37</a></div></div>
+<div class="ttc" id="aclassmodifica_dati_1_1_pannello_rimuovi_html_a283fd0149880861cc11de2631aa3da56"><div class="ttname"><a href="classmodifica_dati_1_1_pannello_rimuovi.html#a283fd0149880861cc11de2631aa3da56">modificaDati.PannelloRimuovi.actionPerformed</a></div><div class="ttdeci">void actionPerformed(ActionEvent e)</div><div class="ttdef"><b>Definition:</b> <a href="_pannello_rimuovi_8java_source.html#l00118">PannelloRimuovi.java:118</a></div></div>
+<div class="ttc" id="aclassmodifica_dati_1_1_pannello_rimuovi_html_a2e8a72987964320db605a323793c0800"><div class="ttname"><a href="classmodifica_dati_1_1_pannello_rimuovi.html#a2e8a72987964320db605a323793c0800">modificaDati.PannelloRimuovi.btnAnnulla</a></div><div class="ttdeci">JButton btnAnnulla</div><div class="ttdef"><b>Definition:</b> <a href="_pannello_rimuovi_8java_source.html#l00039">PannelloRimuovi.java:39</a></div></div>
+<div class="ttc" id="aclassmodifica_dati_1_1_pannello_rimuovi_html_a37ddf71c713bddf3fa03707994a1a486"><div class="ttname"><a href="classmodifica_dati_1_1_pannello_rimuovi.html#a37ddf71c713bddf3fa03707994a1a486">modificaDati.PannelloRimuovi.rimuoviVoce</a></div><div class="ttdeci">void rimuoviVoce()</div><div class="ttdef"><b>Definition:</b> <a href="_pannello_rimuovi_8java_source.html#l00144">PannelloRimuovi.java:144</a></div></div>
+<div class="ttc" id="aclassmodifica_dati_1_1_pannello_rimuovi_html_aa3e82a2829fdbfcea34dfbbf90419ea2"><div class="ttname"><a href="classmodifica_dati_1_1_pannello_rimuovi.html#aa3e82a2829fdbfcea34dfbbf90419ea2">modificaDati.PannelloRimuovi.PannelloRimuovi</a></div><div class="ttdeci">PannelloRimuovi(PannelloIniziale panIniz)</div><div class="ttdef"><b>Definition:</b> <a href="_pannello_rimuovi_8java_source.html#l00045">PannelloRimuovi.java:45</a></div></div>
+<div class="ttc" id="aclassmodifica_dati_1_1_pannello_rimuovi_html_ae3e93a40455071164d1e1a029f636940"><div class="ttname"><a href="classmodifica_dati_1_1_pannello_rimuovi.html#ae3e93a40455071164d1e1a029f636940">modificaDati.PannelloRimuovi.lblAmmontare</a></div><div class="ttdeci">JLabel lblAmmontare</div><div class="ttdef"><b>Definition:</b> <a href="_pannello_rimuovi_8java_source.html#l00036">PannelloRimuovi.java:36</a></div></div>
+<div class="ttc" id="aclassmodifica_dati_1_1_pannello_rimuovi_html_af9092aeb491bad7a88265a35b51e923d"><div class="ttname"><a href="classmodifica_dati_1_1_pannello_rimuovi.html#af9092aeb491bad7a88265a35b51e923d">modificaDati.PannelloRimuovi.spAmmontare</a></div><div class="ttdeci">JSpinner spAmmontare</div><div class="ttdef"><b>Definition:</b> <a href="_pannello_rimuovi_8java_source.html#l00038">PannelloRimuovi.java:38</a></div></div>
+<div class="ttc" id="anamespacedati_html"><div class="ttname"><a href="namespacedati.html">dati</a></div><div class="ttdef"><b>Definition:</b> <a href="_data_8java_source.html#l00006">Data.java:6</a></div></div>
+<div class="ttc" id="anamespaceerrori_html"><div class="ttname"><a href="namespaceerrori.html">errori</a></div><div class="ttdef"><b>Definition:</b> <a href="_ammontare_non_valido_exception_8java_source.html#l00005">AmmontareNonValidoException.java:5</a></div></div>
+<div class="ttc" id="anamespaceinterfaccia_html"><div class="ttname"><a href="namespaceinterfaccia.html">interfaccia</a></div><div class="ttdef"><b>Definition:</b> <a href="_frame_iniziale_8java_source.html#l00006">FrameIniziale.java:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a86fc87b1f6b10391f6980271dff46c1.html">modificaDati</a></li><li class="navelem"><a class="el" href="_pannello_rimuovi_8java.html">PannelloRimuovi.java</a></li>
+    <li class="footer">Generato da <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['layout_0',['layout',['../classinterfaccia_1_1_frame_iniziale.html#ae6c2a5c0df488b9eeab3abffaaf85bca',1,'interfaccia::FrameIniziale']]],
+  ['lblaggiungi_1',['lblAggiungi',['../classmodifica_dati_1_1_pannello_aggiungi.html#a743fa13a2f6e9c4d121e2766973d0e89',1,'modificaDati::PannelloAggiungi']]],
+  ['lblammontare_2',['lblAmmontare',['../classmodifica_dati_1_1_pannello_aggiungi.html#af417fd1ce0077e83ff83970079e1668f',1,'modificaDati.PannelloAggiungi.lblAmmontare()'],['../classmodifica_dati_1_1_pannello_rimuovi.html#ae3e93a40455071164d1e1a029f636940',1,'modificaDati.PannelloRimuovi.lblAmmontare()']]],
+  ['lblammontarenew_3',['lblAmmontareNew',['../classmodifica_dati_1_1_pannello_modifica.html#a4ab4ba6e11d2cb0a4909ad1038cd4b13',1,'modificaDati::PannelloModifica']]],
+  ['lblammontareold_4',['lblAmmontareOld',['../classmodifica_dati_1_1_pannello_modifica.html#a90f57b3c00ec1d8e2cec05b2713a7b8e',1,'modificaDati::PannelloModifica']]],
+  ['lbldata_5',['lblData',['../classmodifica_dati_1_1_pannello_aggiungi.html#ab153097452ceec977aa5f3da4e221786',1,'modificaDati.PannelloAggiungi.lblData()'],['../classmodifica_dati_1_1_pannello_rimuovi.html#a5650ceab5f1018981f033e7030fcaa10',1,'modificaDati.PannelloRimuovi.lblData()']]],
+  ['lbldatanew_6',['lblDataNew',['../classmodifica_dati_1_1_pannello_modifica.html#a276ee31153b53c8a07d1399981a0eeaf',1,'modificaDati::PannelloModifica']]],
+  ['lbldataold_7',['lblDataOld',['../classmodifica_dati_1_1_pannello_modifica.html#a36a88ae745da4350c240b97a617138ef',1,'modificaDati::PannelloModifica']]],
+  ['lbldescrizione_8',['lblDescrizione',['../classmodifica_dati_1_1_pannello_aggiungi.html#a03519c4f6fe15e92daba8ddb6870c7cc',1,'modificaDati.PannelloAggiungi.lblDescrizione()'],['../classmodifica_dati_1_1_pannello_rimuovi.html#a7a345efedbe5a85eeebb6a65d404c792',1,'modificaDati.PannelloRimuovi.lblDescrizione()']]],
+  ['lbldescrizionenew_9',['lblDescrizioneNew',['../classmodifica_dati_1_1_pannello_modifica.html#acfb2315f172752ee52e048157ce76315',1,'modificaDati::PannelloModifica']]],
+  ['lbldescrizioneold_10',['lblDescrizioneOld',['../classmodifica_dati_1_1_pannello_modifica.html#a991ed0c84bd963d85622ff23447bd50c',1,'modificaDati::PannelloModifica']]],
+  ['lblformato_11',['lblFormato',['../classesportazione_dati_1_1_pannello_esporta.html#a2ebba1068915f5a3396ca17637dc3ca5',1,'esportazioneDati::PannelloEsporta']]],
+  ['lblmodifica_12',['lblModifica',['../classmodifica_dati_1_1_pannello_modifica.html#aa3e1f02a929b896a0781bf29165393ce',1,'modificaDati::PannelloModifica']]],
+  ['lblmostra_13',['lblMostra',['../classinterfaccia_1_1_pannello_iniziale.html#a0667d6f02cae2c901ec7d45cf55719c2',1,'interfaccia::PannelloIniziale']]],
+  ['lblnew_14',['lblNew',['../classmodifica_dati_1_1_pannello_modifica.html#a076655754e425bb8c53891889fc4d055',1,'modificaDati::PannelloModifica']]],
+  ['lblnomefile_15',['lblNomeFile',['../classsalvataggio_dati_1_1_pannello_salva_carica.html#a454664033cb31618f61b80820aed45b1',1,'salvataggioDati::PannelloSalvaCarica']]],
+  ['lblold_16',['lblOld',['../classmodifica_dati_1_1_pannello_modifica.html#a2d6f51266c261b02352bca1cf232120b',1,'modificaDati::PannelloModifica']]],
+  ['lblricerca_17',['lblRicerca',['../classinterfaccia_1_1_pannello_iniziale.html#a109f11bd73b0bf062c3207a3406da660',1,'interfaccia::PannelloIniziale']]],
+  ['lblrimuovi_18',['lblRimuovi',['../classmodifica_dati_1_1_pannello_rimuovi.html#ab0698686329738742efe64f9ad377154',1,'modificaDati::PannelloRimuovi']]],
+  ['lbltitolo_19',['lblTitolo',['../classesportazione_dati_1_1_pannello_esporta.html#afecb971aa5ece7b5315ff9b800c18a79',1,'esportazioneDati.PannelloEsporta.lblTitolo()'],['../classsalvataggio_dati_1_1_pannello_salva_carica.html#a508921ad78e717e59d80a59a8efd09d3',1,'salvataggioDati.PannelloSalvaCarica.lblTitolo()']]]
+];
